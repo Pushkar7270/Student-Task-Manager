@@ -7,6 +7,7 @@ def grade():
             print("1. Enter marks")
             print("2. View marks")
             print("3. Change marks")
+            print('4. Calculate CGPA')
             print("5. Exit")                 
             print('---------------------------------')
             choice = int(input("Enter your choice: "))
