@@ -16,6 +16,9 @@ def grade():
                     subject = input('Enter the subject, or press e to exit: ')
                     if subject.lower() == 'e':
                         break
+                    if any(d['Subject'].lower() == subject.lower() for d in marks):
+                        print(f"Subject '{subject}' already exists. Use Option 3 to change it.")
+                        continue
                     mark = input('Enter your mark,or press e to exit: ')
                     credit = input('Enter the credit or press e to exit: ')
                     if subject.isdigit():
