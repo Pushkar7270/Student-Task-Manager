@@ -17,7 +17,7 @@ def grade():
                     if subject.lower() == 'e':
                         break
                     if any(d['Subject'].lower() == subject.lower() for d in marks):
-                        print(f"Subject '{subject}' already exists. Use Option 3 to change it.")
+                        print(f"'{subject}' already exists. Use Option 3 to change it.")
                         continue
                     mark = input('Enter your mark,or press e to exit: ')
                     credit = input('Enter the credit or press e to exit: ')
@@ -65,7 +65,7 @@ def grade():
                     elif crd<0 or crd>4:
                         print('Invalid credit. Please enter a valid credit score.')
                     for i in marks:
-                        if i['Subject'] == sub:
+                        if i['Subject'].lower() == sub.lower():
                             i['Marks'] = mrk
                             i['Credit'] = crd
                             File_handler.save_data(marks, "marks.json")
