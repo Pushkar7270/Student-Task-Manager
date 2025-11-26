@@ -3,5 +3,15 @@
         "Subject": "Calculus",
         "Marks": 80,
         "Credit": 3.0
+    },
+    {
+        "Subject": "Physics(Electromagnetism)",
+        "Marks": 87,
+        "Credit": 3.4
+    },
+    {
+        "Subject": "Computational thinking and programming",
+        "Marks": 68,
+        "Credit": 2.9
     }
 ]

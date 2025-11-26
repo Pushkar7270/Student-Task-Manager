@@ -87,7 +87,7 @@ def grade():
                     grade_point = mark / 10
                     total_points += (grade_point * credit)
                     total_credits += credit
-                    print(f"{i['Subject']}: {grade_point} (GP) x {credit} (Cr)")
+                    print(f"{i['Subject']}: {grade_point} (GradePoints) x {credit} (Credits)")
                 if total_credits == 0:
                     print("Total credits is 0. Cannot calculate CGPA.")
                 else:
