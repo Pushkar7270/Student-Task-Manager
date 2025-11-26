@@ -1,4 +1,5 @@
 import File_handler
+import pandas as pd
 def grade():
     marks = File_handler.load_data("marks.json")
     while True:
@@ -49,9 +50,10 @@ def grade():
                     marks.append(mark_dict)
                     File_handler.save_data(marks, "marks.json")
             elif choice == 2:                                                                      #choice 2
-                print(marks)
+                df = pd.DataFrame(marks,index = range(1,len(marks)+1))
+                print(df)
             elif choice == 3:
-                print(marks)
+                print(df)
                 try:
                     sub = input('Enter the subject you want to change: ')
                     mrk = int(input('Enter the new mark: '))
