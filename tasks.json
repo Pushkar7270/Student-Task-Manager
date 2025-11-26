@@ -1,0 +1,18 @@
+[
+    {
+        "Task": "Complete Dielectrics ",
+        "Status": "Done"
+    },
+    {
+        "Task": "Write journal",
+        "Status": "Not Done"
+    },
+    {
+        "Task": "Complete the novel",
+        "Status": "Not Done"
+    },
+    {
+        "Task": "Explore something new in tech",
+        "Status": "Not Done"
+    }
+]

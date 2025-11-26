@@ -1,4 +1,5 @@
 import File_handler
+import pandas as pd
 def todo():
     try:
         Task = File_handler.load_data("tasks.json")
@@ -18,9 +19,10 @@ def todo():
                 File_handler.save_data(Task, "tasks.json")           
                 print('your task has been added successfully!')
             elif choice == 2:
-                print(Task)
+                df = pd.DataFrame(Task,index = range(1,len(Task)+1))
+                print(df)
             elif choice == 3:
-                print(Task)
+                print(df)
                 while True:
                     print('Which task do you want to mark as completed?,insert the number of the task you wish to mark.')
                     mark = input('Enter the task number.You can leave by pressing e: ')
