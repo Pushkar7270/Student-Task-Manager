@@ -10,5 +10,10 @@ def load_data(filename):
         return []
 
 def save_data(data, filename):
-        with open(filename, 'w') as file:
-            json.dump(data, file, indent=4)
+        try:
+            with open(filename, 'w') as file:
+                json.dump(data, file, indent=4)
+        except FileNotFoundError:
+             return []
+        except json.JSONDecodeError:
+             return []
